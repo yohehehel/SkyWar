@@ -1,0 +1,26 @@
+# Build configuration pour le serveur SkyWar
+# Cible: PHP (peut être modifié pour Neko ou autre)
+
+# Point d'entrée (à créer si manquant)
+# -main Main
+
+# Chemins source
+-cp src
+-cp ../../com
+
+# Cible PHP
+-php www/php
+
+# Ou cible Neko (décommenter si préféré)
+# -neko server.n
+
+# Définitions de compilation
+-D server
+-D php
+
+# Note: Ce fichier nécessite que le code serveur complet soit présent
+# Il manque actuellement:
+# - La classe Main.hx (point d'entrée)
+# - Les classes db.* (base de données)
+# - La classe App (gestionnaire principal)
+
